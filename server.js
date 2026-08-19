@@ -15,7 +15,6 @@ loadEnvFile(path.join(ROOT, '.env'));
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const IS_PROD = NODE_ENV === 'production';
-const PORT = Number(process.env.PORT || 3000);
 const PUBLIC_BASE_URL = String(process.env.PUBLIC_BASE_URL || '').replace(/\/$/, '');
 const DATA_ROOT = path.resolve(process.env.DATA_ROOT || path.join(ROOT, 'storage'));
 const DB_FILE = path.resolve(process.env.DB_FILE || path.join(DATA_ROOT, 'belilas.sqlite'));
