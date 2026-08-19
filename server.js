@@ -636,3 +636,8 @@ function isValidImageFile(filePath, ext) {
 function escapeXml(value) {
   return String(value).replace(/[<>&'"]/g, char => ({ '<':'&lt;','>':'&gt;','&':'&amp;',"'":'&apos;','"':'&quot;' }[char]));
 }
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`BELILAS DIGITAL PRINTING running on port ${PORT}`);
+});
