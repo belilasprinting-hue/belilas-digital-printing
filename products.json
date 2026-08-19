@@ -1,0 +1,14 @@
+[
+  {"id":"kartu-nama","name":"Kartu Nama Premium","category":"kantor","price":35000,"unit":"100 pcs","badge":"Best Seller","description":"Full color dua sisi, pilihan art carton 260–310 gsm, opsi laminasi doff/glossy.","accent":"blue"},
+  {"id":"banner","name":"Banner / Spanduk","category":"promosi","price":25000,"unit":"m²","badge":"Promo","description":"Flexi indoor/outdoor, mata ayam, finishing rapi, cocok untuk toko dan event.","accent":"yellow"},
+  {"id":"x-banner","name":"X-Banner","category":"promosi","price":85000,"unit":"set","badge":"Siap Pakai","description":"Cetak banner lengkap dengan rangka X-banner untuk promosi dan pameran.","accent":"purple"},
+  {"id":"brosur","name":"Brosur & Flyer","category":"promosi","price":75000,"unit":"100 pcs","badge":"Populer","description":"A5/A4/custom, art paper, lipat 2 atau 3, pilihan finishing.","accent":"purple"},
+  {"id":"stiker","name":"Stiker Custom","category":"custom","price":30000,"unit":"A3+","badge":"Custom","description":"Vinyl, chromo, transparan, kraft, kiss cut atau cutting bentuk.","accent":"cyan"},
+  {"id":"undangan","name":"Undangan","category":"acara","price":150000,"unit":"100 pcs","badge":"Acara","description":"Undangan pernikahan, ulang tahun, syukuran, dan event lainnya.","accent":"pink"},
+  {"id":"buku","name":"Buku / Modul","category":"kantor","price":25000,"unit":"mulai","badge":"Rapi","description":"Modul, booklet, company profile, laporan, jilid staples/spiral/lem panas.","accent":"blue"},
+  {"id":"poster","name":"Poster","category":"promosi","price":10000,"unit":"A3","badge":"Cepat","description":"Poster promosi, informasi, event, dekorasi, dan kebutuhan sekolah.","accent":"orange"},
+  {"id":"stempel","name":"Stempel","category":"kantor","price":65000,"unit":"mulai","badge":"Kantor","description":"Stempel flash, otomatis, tanggal, logo, dan kebutuhan perusahaan.","accent":"slate"},
+  {"id":"hangtag","name":"Hang Tag / Label","category":"custom","price":85000,"unit":"100 pcs","badge":"UMKM","description":"Label produk fashion, makanan, souvenir, dan brand UMKM.","accent":"yellow"},
+  {"id":"nota","name":"Nota / Faktur","category":"kantor","price":125000,"unit":"rim","badge":"Bisnis","description":"Nota NCR 2–5 ply, nomorator, perforasi, dan desain custom.","accent":"cyan"},
+  {"id":"sertifikat","name":"Sertifikat","category":"acara","price":5000,"unit":"lembar","badge":"Event","description":"Cetak sertifikat full color dengan personalisasi nama peserta.","accent":"pink"}
+]

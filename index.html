@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#121826" />
+  <meta name="description" content="Belilas Digital Printing — percetakan online premium dengan pemesanan, upload desain, checkout, dan tracking order." />
+  <title>Belilas Digital Printing — Cetak Mudah, Hasil Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="promo-bar">
+    <div class="container promo-inner">
+      <span id="promoText" data-edit="promoText">Gratis konsultasi desain • Upload file langsung saat checkout</span>
+      <button class="link-btn" id="trackTopBtn">Lacak Pesanan</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="logo-wrap"><img class="brand-logo" src="belilas-logo.png" alt="Belilas Digital Printing" /></a>
+      <nav class="desktop-nav">
+        <a href="#home">Beranda</a>
+        <a href="#produk">Produk</a>
+        <a href="#keunggulan">Keunggulan</a>
+        <a href="#cara-order">Cara Order</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="outline-pill" id="trackBtn">Lacak</button>
+        <button class="cart-btn" id="openCartBtn">Keranjang <span id="cartCount">0</span></button>
+        <button class="menu-btn" id="menuBtn">☰</button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Beranda</a><a href="#produk">Produk</a><a href="#keunggulan">Keunggulan</a><a href="#cara-order">Cara Order</a><a href="#kontak">Kontak</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" id="heroEyebrow" data-edit="heroEyebrow">BELILAS DIGITAL PRINTING</span>
+          <h1><span id="heroTitleBefore" data-edit="heroTitleBefore">Cetak kebutuhanmu dengan proses</span> <span id="heroHighlight" data-edit="heroHighlight">lebih praktis</span><span id="heroTitleAfter" data-edit="heroTitleAfter">.</span></h1>
+          <p id="heroText" data-edit="heroText">Pilih produk, upload file desain, checkout online, lalu pantau status pesanan sampai selesai. Cocok untuk bisnis, sekolah, event, komunitas, dan kebutuhan personal.</p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#produk">Mulai Pesan</a>
+            <button class="secondary-btn wa-btn" data-message="Halo Belilas Digital Printing, saya ingin konsultasi kebutuhan cetak.">Konsultasi WhatsApp</button>
+          </div>
+          <div class="hero-proof">
+            <div><strong>File langsung</strong><span>PDF, PNG, JPG, AI, PSD, CDR, ZIP</span></div>
+            <div><strong>Checkout online</strong><span>Order tercatat otomatis</span></div>
+            <div><strong>Tracking</strong><span>Pantau status pesanan</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orb one"></div><div class="art-orb two"></div>
+          <div class="art-card art-banner"><small>BANNER</small><strong>PROMO<br><em>SPESIAL</em></strong><span>FULL COLOR PRINT</span></div>
+          <div class="art-card art-namecard"><b>BD</b><div><strong>BELILAS</strong><span>Digital Printing</span></div></div>
+          <div class="art-card art-sticker"><span>STICKER</span><strong>CUSTOM</strong><i>cut • vinyl • label</i></div>
+          <div class="art-badge">Siap upload desain</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="container strip-grid">
+        <div><b>01</b><span>Pilih Produk</span></div>
+        <div><b>02</b><span>Upload Desain</span></div>
+        <div><b>03</b><span>Checkout</span></div>
+        <div><b>04</b><span>Produksi & Kirim</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="produk">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="kicker">KATALOG ONLINE</span><h2>Produk percetakan</h2></div>
+          <p>Pilih produk, jumlah, lalu masukkan ke keranjang. Harga final dapat menyesuaikan spesifikasi cetak.</p>
+        </div>
+        <div class="catalog-tools">
+          <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Cari kartu nama, banner, stiker..." /></div>
+          <div class="chips" id="categoryChips">
+            <button class="chip active" data-category="all">Semua</button>
+            <button class="chip" data-category="promosi">Promosi</button>
+            <button class="chip" data-category="kantor">Kantor</button>
+            <button class="chip" data-category="acara">Acara</button>
+            <button class="chip" data-category="custom">Custom</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="section premium-section" id="keunggulan">
+      <div class="container premium-grid">
+        <div class="premium-copy">
+          <span class="kicker light-kicker">LAYANAN PREMIUM</span>
+          <h2>Dari file sampai barang jadi, semua lebih terkontrol.</h2>
+          <p>Website ini bukan hanya katalog. Pesanan pelanggan tercatat, file desain tersimpan, dan status produksi dapat diperbarui admin.</p>
+          <button class="white-btn" id="trackMidBtn">Coba Lacak Pesanan</button>
+        </div>
+        <div class="feature-grid">
+          <article><span>⇧</span><h3>Upload Desain</h3><p>Maksimal 5 file, 25 MB per file.</p></article>
+          <article><span>✓</span><h3>Order ID</h3><p>Setiap pesanan punya nomor unik.</p></article>
+          <article><span>↻</span><h3>Status Order</h3><p>Pelanggan dapat mengecek progres.</p></article>
+          <article><span>▦</span><h3>Dashboard Admin</h3><p>Lihat order, file, dan ubah status.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cara-order">
+      <div class="container">
+        <div class="section-head centered"><div><span class="kicker">ALUR PEMESANAN</span><h2>Empat langkah sampai dicetak</h2></div></div>
+        <div class="steps-grid">
+          <article><span>01</span><h3>Pilih layanan</h3><p>Cari produk yang dibutuhkan dan atur jumlahnya.</p></article>
+          <article><span>02</span><h3>Upload file</h3><p>Unggah desain saat checkout atau beri catatan bila perlu desain dari tim Belilas.</p></article>
+          <article><span>03</span><h3>Konfirmasi</h3><p>Admin memeriksa file, bahan, ukuran, finishing, harga final, dan pembayaran.</p></article>
+          <article><span>04</span><h3>Produksi</h3><p>Pesanan masuk proses cetak lalu dikirim atau diambil sesuai pilihan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontak">
+      <div class="container contact-card">
+        <div><span class="kicker" id="contactBrand">BELILAS DIGITAL PRINTING</span><h2 id="contactTitle" data-edit="contactTitle">Butuh rekomendasi bahan atau ukuran?</h2><p id="contactText" data-edit="contactText">Hubungi admin untuk konsultasi sebelum melakukan pemesanan.</p></div>
+        <div class="contact-actions"><button class="primary-btn wa-btn" data-message="Halo Belilas Digital Printing, saya ingin konsultasi sebelum pesan.">WhatsApp <span id="whatsappDisplay" data-edit="whatsappDisplay">082123776363</span></button><button class="secondary-btn" id="trackBottomBtn">Lacak Pesanan</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand"><img class="brand-logo" src="belilas-logo.png" alt="Belilas Digital Printing" /><p id="footerText" data-edit="footerText">Percetakan online untuk kebutuhan bisnis dan personal.</p></div>
+      <div><h4>Belanja</h4><a href="#produk">Semua Produk</a><a href="#cara-order">Cara Order</a><button class="footer-link" id="trackFooterBtn">Lacak Pesanan</button></div>
+      <div><h4>Kontak</h4><button class="footer-link wa-btn" data-message="Halo Belilas Digital Printing, saya ingin bertanya."><span id="footerWhatsapp">082123776363</span></button><span id="storeHours" data-edit="storeHours">Senin–Sabtu, 08.00–20.00 WIB</span></div>
+      <div><h4>Admin</h4><a href="admin.html">Dashboard Pesanan</a><span>Login admin menggunakan session aman.</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Belilas Digital Printing</span><span>Premium Online Store</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="cartDrawer">
+    <div class="drawer-head"><div><small>KERANJANG</small><h3>Pesanan Anda</h3></div><button class="icon-btn" id="closeCartBtn">×</button></div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="empty-state" id="cartEmpty"><div>🛒</div><h4>Keranjang masih kosong</h4><p>Tambahkan produk dari katalog.</p></div>
+    <div class="drawer-foot" id="cartSummary"><div class="total-row"><span>Estimasi subtotal</span><strong id="cartTotal">Rp 0</strong></div><small>Harga final mengikuti spesifikasi cetak dan konfirmasi admin.</small><button class="primary-btn full" id="checkoutBtn">Checkout & Upload Desain</button></div>
+  </aside>
+
+  <div class="modal" id="checkoutModal">
+    <div class="modal-card checkout-card">
+      <div class="modal-head"><div><small>CHECKOUT ONLINE</small><h3>Lengkapi pesanan</h3></div><button class="icon-btn" id="closeCheckoutBtn">×</button></div>
+      <div class="checkout-progress"><span class="active" data-step-dot="1">1</span><i></i><span data-step-dot="2">2</span><i></i><span data-step-dot="3">3</span></div>
+      <form id="checkoutForm">
+        <section class="checkout-step active" data-step="1">
+          <h4>Data pelanggan</h4>
+          <div class="form-grid two"><label>Nama lengkap<input required id="customerName" /></label><label>Nomor WhatsApp<input required id="customerPhone" placeholder="08xxxxxxxxxx" /></label></div>
+          <div class="form-grid two"><label>Email (opsional)<input id="customerEmail" type="email" /></label><label>Kota / Kecamatan<input id="customerCity" /></label></div>
+          <label>Alamat lengkap<textarea id="customerAddress" rows="3" placeholder="Isi jika pesanan akan dikirim"></textarea></label>
+        </section>
+        <section class="checkout-step" data-step="2">
+          <h4>Upload file desain</h4>
+          <label class="upload-zone" id="uploadZone"><input id="designFiles" type="file" multiple accept=".pdf,.png,.jpg,.jpeg,.webp,.zip,.rar,.ai,.psd,.cdr,.svg,.eps" /><strong>Tarik file ke sini atau klik untuk memilih</strong><span>PDF, PNG, JPG, AI, PSD, CDR, SVG, EPS, ZIP/RAR • max. 5 file • 25 MB/file</span></label>
+          <div class="file-list" id="fileList"></div>
+          <label>Catatan desain / finishing<textarea id="customerNote" rows="4" placeholder="Contoh: ukuran 60×160 cm, laminasi doff, tanpa revisi desain, deadline Jumat..."></textarea></label>
+        </section>
+        <section class="checkout-step" data-step="3">
+          <h4>Pengiriman & pembayaran</h4>
+          <div class="option-grid">
+            <label class="radio-card"><input type="radio" name="shipping" value="pickup" checked /><span><strong>Ambil di toko</strong><small>Rp 0</small></span></label>
+            <label class="radio-card"><input type="radio" name="shipping" value="local" /><span><strong>Kurir lokal</strong><small>Estimasi Rp 15.000</small></span></label>
+            <label class="radio-card"><input type="radio" name="shipping" value="expedition" /><span><strong>Ekspedisi</strong><small>Estimasi Rp 25.000</small></span></label>
+          </div>
+          <div class="option-grid payment-grid">
+            <label class="radio-card"><input type="radio" name="payment" value="transfer" checked /><span><strong>Transfer</strong><small>Konfirmasi admin</small></span></label>
+            <label class="radio-card"><input type="radio" name="payment" value="cod" /><span><strong>COD</strong><small>Jika tersedia</small></span></label>
+            <label class="radio-card"><input type="radio" name="payment" value="store" /><span><strong>Bayar di toko</strong><small>Saat pengambilan</small></span></label>
+          </div>
+          <div class="checkout-summary" id="checkoutSummary"></div>
+        </section>
+        <div class="checkout-actions"><button type="button" class="secondary-btn" id="prevStepBtn">Kembali</button><button type="button" class="primary-btn" id="nextStepBtn">Lanjut</button><button type="submit" class="primary-btn" id="submitOrderBtn">Buat Pesanan</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="trackModal">
+    <div class="modal-card track-card">
+      <div class="modal-head"><div><small>TRACKING ORDER</small><h3>Lacak pesanan</h3></div><button class="icon-btn" id="closeTrackBtn">×</button></div>
+      <form id="trackForm" class="track-form"><label>Nomor Pesanan<input id="trackOrderId" required placeholder="BL-20260818-ABC123" /></label><label>Nomor WhatsApp<input id="trackPhone" required placeholder="08xxxxxxxxxx" /></label><button class="primary-btn full">Cek Status</button></form>
+      <div class="track-result" id="trackResult"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="successModal">
+    <div class="modal-card success-card"><div class="success-mark">✓</div><small>PESANAN BERHASIL DIBUAT</small><h3 id="successOrderId">-</h3><p id="successText">Pesanan telah masuk.</p><div class="success-actions"><button class="primary-btn wa-btn" id="successWaBtn">Konfirmasi via WhatsApp</button><button class="secondary-btn" id="closeSuccessBtn">Tutup</button></div></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <div class="cms-editbar" id="cmsEditbar" hidden>
+    <div class="cms-editbar-inner">
+      <strong>Mode Edit Website</strong>
+      <input id="inlineAdminKey" type="password" placeholder="Password admin" />
+      <button id="enableEditBtn" type="button">Aktifkan Edit</button>
+      <button id="saveEditBtn" type="button" hidden>Simpan Perubahan</button>
+      <a href="admin.html">Dashboard CMS</a>
+      <a href="/">Keluar</a>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

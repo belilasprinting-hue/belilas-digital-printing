@@ -1,0 +1,24 @@
+{
+  "name": "belilas-digital-printing-production-store",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Production-ready Belilas Digital Printing online store with CMS, secure admin session, SQLite persistence, private design uploads, order tracking, health checks, and Docker deployment.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check public/app.js && node --check public/admin.js && node scripts/check-config.js",
+    "secret": "node scripts/generate-secret.js",
+    "backup": "node scripts/backup.js"
+  },
+  "engines": {
+    "node": ">=24 <27"
+  },
+  "dependencies": {
+    "compression": "1.8.1",
+    "express": "5.2.1",
+    "express-rate-limit": "8.6.2",
+    "helmet": "8.3.0",
+    "multer": "2.2.0"
+  }
+}
