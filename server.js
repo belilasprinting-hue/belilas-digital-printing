@@ -147,11 +147,16 @@ app.use(express.static(path.join(ROOT, 'public'), {
 app.get('/healthz', (req, res) => res.status(200).json({ ok: true, service: 'belilas-digital-printing' }));
 app.get('/readyz', (req, res) => {
   try {
-    db.prepare('SELECT 1 AS ok').get();
-    fs.accessSync(DATA_ROOT, fs.constants.R_OK | fs.constants.W_OK);
-    res.status(200).json({ ok: true });
+    fs.mkdirSync(DATA_ROOT, { recursive: true });
+    res.status(200).json({
+      ok: true,
+      service: "belilas-digital-printing"
+    });
   } catch (error) {
-    res.status(503).json({ ok: false });
+    res.status(503).json({
+      ok: false,
+      error: error.message
+    });
   }
 });
 
